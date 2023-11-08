@@ -1,8 +1,5 @@
-# Use the latest Nginx image from Docker Hub
+# Use the official Nginx image as the base image
 FROM nginx:latest
 
-# Copy your proxy configuration file to the container
+# Copy the custom proxy configuration to Nginx's conf.d directory
 COPY proxy.conf /etc/nginx/conf.d/default.conf
-
-# Expose port 80
-EXPOSE 80
