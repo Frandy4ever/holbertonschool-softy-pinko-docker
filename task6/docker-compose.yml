@@ -11,8 +11,6 @@ services:
       context: ./softy-pinko-back-end
       dockerfile: Dockerfile
     image: softy-pinko-back-end:task6
-    deploy:
-      replicas: 2 # Scale the back-end service to 2 replicas
 
   proxy:
     build:
